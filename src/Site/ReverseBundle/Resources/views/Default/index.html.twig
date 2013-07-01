@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+
+{% block css %}
+{% stylesheets output='css/all.css' filter='cssrewrite'
+                'css/adds.css'
+                'css/bootstrap.css'
+                'css/bootstrap-responsive.css'
+%}
+
+<link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+{% endblock %}
+
+<body>
+<center>
+
+<h1>Hello {{ url }}!</h1>
+
+</center>
+</body>
+
+{% block javascript %}
+
+{% javascripts
+	'@SiteReverseBundle/Resources/public/js/bootstrap.js'
+        '@SiteReverseBundle/Resources/public/js/jquery-1.9.1.js'
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}
+
+</html>

@@ -1,0 +1,3 @@
+site_reverse_homepage:
+    pattern:  /site/{url}
+    defaults: { _controller: SiteReverseBundle:Default:index }

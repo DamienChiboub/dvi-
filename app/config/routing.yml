@@ -1,0 +1,4 @@
+site_reverse:
+    resource: "@SiteReverseBundle/Resources/config/routing.yml"
+    prefix:   /
+
